@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Status" path="/status" id="4f1b4e9c-0ba6-4962-80a3-a3cf4a8a80d4" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4f1b4e9c-0ba6-4962-80a3-a3cf4a8a80d4fileName">Status</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Status" id="d55c3002-a6f8-4640-8825-5766baf39159" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:stat="https://simple-books-api.glitch.me/status">stat:Response</con:element>
+    </con:representation>
+    <con:request name="https://simple-books-api.glitch.me/status" id="48d2a026-c39d-40e2-b992-daa20830d4b3" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://simple-books-api.glitch.me</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://simple-books-api.glitch.me/status</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

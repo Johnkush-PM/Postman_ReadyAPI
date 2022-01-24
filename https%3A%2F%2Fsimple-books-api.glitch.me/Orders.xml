@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Orders" path="/orders" id="7c1581ed-e987-474d-9e42-ee879cca20ff" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7c1581ed-e987-474d-9e42-ee879cca20fffileName">Orders</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Orders" id="8aa18509-15a3-4376-92b9-2f41414051f0" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>401 404</con:status>
+      <con:params/>
+      <con:element xmlns:ord="https://simple-books-api.glitch.me/orders">ord:Fault</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:element xmlns:ord="https://simple-books-api.glitch.me/orders">ord:Response</con:element>
+    </con:representation>
+    <con:request name="submit order" id="29786128-03c4-4623-ad33-3207350a358b" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://simple-books-api.glitch.me</con:endpoint>
+      <con:request>{\r
+  "bookId": 5,\r
+  "customerName": "John"\r
+}</con:request>
+      <con:originalUri>https://simple-books-api.glitch.me/orders</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>jj</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

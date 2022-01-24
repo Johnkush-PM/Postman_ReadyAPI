@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="51fe3331-c762-4add-89d5-3f58dde73046" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://simple-books-api.glitch.me" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:settings>
+    <con:setting id="51fe3331-c762-4add-89d5-3f58dde73046fileName">https%3A%2F%2Fsimple-books-api.glitch.me</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>https://simple-books-api.glitch.me</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="Default"/>
+  </con:environmentSpec>
+</con:interface>
